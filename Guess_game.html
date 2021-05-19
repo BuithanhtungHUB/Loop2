@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guess-game</title>
+</head>
+<body>
+<script>
+    let min = parseInt(prompt("Nhập số bắt đầu khoảng muốn đoán: "));
+    let max = parseInt(prompt("Nhập số kết thúc khoảng muốn đoán: "));
+    let random = Math.round(Math.random() * (max - min) + min);
+
+    for (let i = 0; i < 3; i++) {
+        let guess = parseInt(prompt("Nhập số bạn đoán: "));
+        if (guess == random) {
+            alert("Chúc mừng bạn đã đoán đúng! Random = " + random);
+            break;
+        } else if (guess < random) {
+            alert("Số của bạn nhỏ hơn");
+        } else alert("Số của bạn lớn hơn");
+    }
+    alert("kết thúc");
+</script>
+</body>
+</html>

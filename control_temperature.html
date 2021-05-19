@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Control_temperature</title>
+</head>
+<body>
+<script>
+  let tem = parseInt(prompt("Nhập nhiệt độ hiện tại (độ C):"));
+  while (tem >= 100) {
+    alert("Hãy giảm nhiệt độ xuống!");
+    break;
+  } while (tem < 20) {
+    alert("Hãy tăng nhiệt độ lên!");
+    break;
+  } alert("Bạn đang trong ngưỡng an toàn!");
+</script>
+</body>
+</html>
